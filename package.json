@@ -1,0 +1,22 @@
+{
+  "name": "gpfirouter-stats",
+  "version": "1.0.0",
+  "description": "A simple Node.js application to fetch and display GPFI Router (huawei 4g cpe 5s) statistics.",
+  "author": "Sajjad Amin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sajjad-amin/gpfi-statistics.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "private": true,
+  "dependencies": {
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "puppeteer": "^24.11.1",
+    "xml2js": "^0.6.2"
+  }
+}

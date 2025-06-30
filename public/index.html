@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Router Usage Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <h2>📊 Router Data Usage Summary (API)</h2>
+    <table id="dataTable">
+        <thead>
+        <tr>
+            <th>Type</th>
+            <th>Current</th>
+            <th>Monthly</th>
+            <th>Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Used</td>
+            <td id="current_volume">-</td>
+            <td id="monthly_used">-</td>
+            <td id="total_volume">-</td>
+        </tr>
+        <tr>
+            <td>Duration</td>
+            <td id="current_session">-</td>
+            <td id="monthly_total">-</td>
+            <td id="total_duration">-</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="4" id="last_reset">Last reset: </td>
+        </tr>
+        </tfoot>
+    </table>
+    <div id="buttonArea">
+        <button id="reloadBtn">Reload</button>
+        <div id="reloadTimer">
+            <label for="autoReload" id="autoReloadLabel">Auto reload: </label><input type="checkbox" id="autoReload" checked />
+        </div>
+    </div>
+    <nav id="navLinks">
+        <a href="/ui">UI</a>
+        <a href="/api-rest" target="_blank">Rest API</a>
+        <a href="/api-ui" target="_blank">UI API</a>
+    </nav>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
